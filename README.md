@@ -1,5 +1,7 @@
 # Openevsetester Firmware
 
+This repro is just about the [ESP-IDF](https://docs.espressif.com/projects/esp-idf/) based firmware of [OpenEVSEtester](https://github.com/mistay/openevsetester)
+
 ## Requirements
 - ✓ DEV: basic check if hardware is designed properly, hardware fixes in both schematic and board
 - ✓ PP {PP1, PP2, ..PP5} switches on/of
