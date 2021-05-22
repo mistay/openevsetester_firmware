@@ -83,25 +83,25 @@ void rotary_buttonpressed() {
 }
 
 void test_pp() {
+    pp_out_of_spec_too_low();
     pp_13a();
     pp_20a();
     pp_32a();
     pp_63a();
-    pp_low();
-    pp_high();
+    pp_out_of_spec_too_high();
 }
 
 void test_cp() {
     saeJ1772_state_e();
-    vTaskDelay(2000/portTICK_PERIOD_MS);
+    vTaskDelay(100/portTICK_PERIOD_MS);
     saeJ1772_state_a();
-    vTaskDelay(2000/portTICK_PERIOD_MS);
+    vTaskDelay(100/portTICK_PERIOD_MS);
     saeJ1772_state_b();
-    vTaskDelay(2000/portTICK_PERIOD_MS);
+    vTaskDelay(100/portTICK_PERIOD_MS);
     saeJ1772_state_c();
-    vTaskDelay(2000/portTICK_PERIOD_MS);
+    vTaskDelay(100/portTICK_PERIOD_MS);
     saeJ1772_state_diode_fault();
-    vTaskDelay(2000/portTICK_PERIOD_MS);
+    vTaskDelay(100/portTICK_PERIOD_MS);
 }
 
 

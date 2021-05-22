@@ -51,12 +51,12 @@ void pp_63a() {
     pp(7);
 }
 
-void pp_low() {
+void pp_out_of_spec_too_low() {
     pp_clear();
     pp(11);
 }
 
-void pp_high() {
+void pp_out_of_spec_too_high() {
     pp(7);
     pp(8);
     pp(9);
