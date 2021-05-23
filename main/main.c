@@ -18,6 +18,7 @@ int _rotary;
 
 #include "pp.h"
 #include "cp.h"
+#include "pe.h"
 
 static const int I2CDisplayAddress = 0x3C;
 static const int I2CDisplayWidth = 128;
@@ -113,6 +114,8 @@ void app_main( void ) {
 
     cp_init();
     test_cp();
+
+    pe_breaker_init();
 
     switch_on_display_power();
 
